@@ -1,14 +1,22 @@
 body, #signup {
     display: flex;
     flex-direction: column;
+    font-family: sans-serif;
 }
-header, #awesome {
+header, #awesome, footer {
     background-color: #1f2937;
     display: flex;
     flex-direction: row;
 }
-header, #awesome, #action{
+header, #awesome, #action, footer{
     color: white;
+}
+#random{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
 }
 #thunder {
     background-color: #e5e7eb;
@@ -19,8 +27,12 @@ header, #awesome, #action{
 #thunder > cite {
     text-align: right;
 }
-#awesome, #thunder, #action {
-    padding: 48px;
+#thunder > blockquote {
+    font-weight: lighter;
+    font-style: italic; 
+}
+#awesome, #thunder, #action, #random {
+    padding: 96px;
 }
 #inneraction{
     background-color: #3882f6;
@@ -33,20 +45,24 @@ header, #awesome, #action{
 #placeholder {
     background-color: #6d747d;
 }
-header {
+header, footer {
     padding: 16px 48px;
     justify-content: space-between
 }
 ul{
     display: flex;
-    gap: 12px;
+    gap: 48px;
+    justify-content: space-around;
 }
 li {
     list-style: none;
+    max-width: 120px;
+    box-sizing: border-box;
+    text-align: center;
 }
 .empty {
-    width: 96px;
-    height: 96px;
+    width: 120px;
+    height: 120px;
     border: #3882f6 3px solid;
     border-radius: 10px;
 }
@@ -57,4 +73,33 @@ li {
 }
 cite {
     align-self: flex-end;
+    font-style: normal;
+}
+button {
+    padding: 4px 16px;
+    flex: 0 0 1;
+    max-width: 96px;
+    max-height: 24px;
+    box-sizing: border-box;
+    background-color: #3882f6;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.one {
+    border: none;
+}
+.two {
+    border: 2px solid white;
+    max-height: 30px;
+}
+.bold {
+    font-weight: 900;
+}
+.big{
+    font-size: 30px;
+}
+span {
+    font-size: 24px;
 }
