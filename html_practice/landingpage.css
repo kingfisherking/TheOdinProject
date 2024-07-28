@@ -17,6 +17,7 @@ header, #awesome, #action, footer{
     justify-content: center;
     align-items: center;
     gap: 24px;
+    padding: 24px 48px;
 }
 #thunder {
     background-color: #e5e7eb;
@@ -31,19 +32,29 @@ header, #awesome, #action, footer{
     font-weight: lighter;
     font-style: italic; 
 }
-#awesome, #thunder, #action, #random {
-    padding: 96px;
+#thunder, #action, #random {
+    padding: 48px 96px;
+}
+#awesome {
+    padding: 48px 196px;
 }
 #inneraction{
     background-color: #3882f6;
     border-radius: 5px;
-    padding: 48px;
+    padding: 24px 48px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 #placeholder {
     background-color: #6d747d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#signup, #placeholder {
+    width: 50%;
 }
 header, footer {
     padding: 16px 48px;
@@ -70,6 +81,7 @@ li {
     font-size: 12px;
     font-weight: 200;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 4px;
 }
 cite {
     align-self: flex-end;
@@ -79,7 +91,7 @@ button {
     padding: 4px 16px;
     flex: 0 0 1;
     max-width: 96px;
-    max-height: 24px;
+    max-height: 30px;
     box-sizing: border-box;
     background-color: #3882f6;
     color: white;
@@ -92,14 +104,28 @@ button {
 }
 .two {
     border: 2px solid white;
-    max-height: 30px;
 }
 .bold {
-    font-weight: 900;
+    font-weight: bolder;
+    margin-bottom: 0;
 }
 .big{
     font-size: 30px;
 }
 span {
     font-size: 24px;
+}
+#signup > p {
+    margin: 3px;
+}
+p.bold{
+    font-size: 16px;
+}
+p.bigger {
+    font-size: 36px;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
