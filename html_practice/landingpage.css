@@ -1,0 +1,60 @@
+body, #signup {
+    display: flex;
+    flex-direction: column;
+}
+header, #awesome {
+    background-color: #1f2937;
+    display: flex;
+    flex-direction: row;
+}
+header, #awesome, #action{
+    color: white;
+}
+#thunder {
+    background-color: #e5e7eb;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+#thunder > cite {
+    text-align: right;
+}
+#awesome, #thunder, #action {
+    padding: 48px;
+}
+#inneraction{
+    background-color: #3882f6;
+    border-radius: 5px;
+    padding: 48px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#placeholder {
+    background-color: #6d747d;
+}
+header {
+    padding: 16px 48px;
+    justify-content: space-between
+}
+ul{
+    display: flex;
+    gap: 12px;
+}
+li {
+    list-style: none;
+}
+.empty {
+    width: 96px;
+    height: 96px;
+    border: #3882f6 3px solid;
+    border-radius: 10px;
+}
+.subtext {
+    font-size: 12px;
+    font-weight: 200;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+cite {
+    align-self: flex-end;
+}
