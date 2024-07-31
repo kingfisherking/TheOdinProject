@@ -8,16 +8,23 @@ function to clear the screen, function to update screen, function to change colo
 function to prompt user for size
 */
 let counter;
+let dfault = 16;
 
 function clearScreen(){
     let screen = document.querySelector("#screen");
     screen.innerHTML = "";
 }
 
-function createScreen(numSquare=16) {
-    clearScreen();
+function createScreen(numSquare=dfault) {
+    dfault = numSquare; //ensures that the screen stays the same size when reset
     counter = 0;
+
+    clearScreen();
     let screen = document.querySelector("#screen");
+
+    screen.style.width = `${numSquare}em`;
+    screen.style.height = `${numSquare}em`;
+
     for(let x = 0; x < numSquare; x++){
         for(let y = 0; y < numSquare; y++){
             let div = document.createElement("div");
@@ -55,6 +62,7 @@ function changeColor(e){
     e.target.style.backgroundColor = 'black';
     e.target.style.color = 'black';
 }
+
 window.onload = function() {
-    createScreen(5);
+    createScreen();
 };

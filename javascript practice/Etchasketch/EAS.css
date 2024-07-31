@@ -6,9 +6,11 @@ body {
 #screen {
     display: flex;
     flex-wrap: wrap;
+    border: 1px solid lightgray;
 }
 #screen > div {
     width: 1em;
     height: 1em;
     color: white;
+    flex: auto;
 }
