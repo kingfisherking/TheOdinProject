@@ -7,10 +7,12 @@ body {
     display: flex;
     flex-wrap: wrap;
     border: 1px solid lightgray;
+    width: 600px;
+    height: 600px;
 }
 #screen > div {
-    width: 1em;
-    height: 1em;
+    width: 1px;
+    height: 1px;
     color: white;
     flex: auto;
 }

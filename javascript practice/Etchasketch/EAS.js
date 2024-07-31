@@ -15,6 +15,13 @@ function clearScreen(){
     screen.innerHTML = "";
 }
 
+function prepareDiv(div, size){
+    div.textContent = " ";
+    div.addEventListener("mouseover", changeColor);
+    div.style.width = `${600/size}px`;
+    div.style.height = `${600/size}px`;
+}
+
 function createScreen(numSquare=dfault) {
     dfault = numSquare; //ensures that the screen stays the same size when reset
     counter = 0;
@@ -22,14 +29,13 @@ function createScreen(numSquare=dfault) {
     clearScreen();
     let screen = document.querySelector("#screen");
 
-    screen.style.width = `${numSquare}em`;
-    screen.style.height = `${numSquare}em`;
+    // screen.style.width = `${numSquare}em`;
+    // screen.style.height = `${numSquare}em`;
 
     for(let x = 0; x < numSquare; x++){
         for(let y = 0; y < numSquare; y++){
             let div = document.createElement("div");
-            div.textContent = "a";
-            div.addEventListener("mouseover", changeColor);
+            prepareDiv(div, numSquare);
             screen.appendChild(div);
             counter++
         }
