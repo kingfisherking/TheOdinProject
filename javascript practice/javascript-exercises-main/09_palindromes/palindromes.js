@@ -1,4 +1,8 @@
-const palindromes = function () {
+const palindromes = function (word) {
+    let letters = word.split();
+    return letters.every((item, index, arr) => 
+        item == arr[index - index*2]
+    )
 
 };
 
