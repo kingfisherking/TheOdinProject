@@ -5,69 +5,156 @@ Screen
 1 2 3 x
 < 0 = /
 */
-let num1 = false;
+let display;
+let calculationBasin = "";
 let operator = false;
-let num2 = false;
-let display = "";
-let calculationBasin;
+let result;
 
 function add(a,b) {
-    return a+b ;
+    [a1, b1] = [parseInt(a), parseInt(b)];
+    return (a1+b1).toString();
 }
 
 function subtract(a,b) {
-    return a-b ;
+    [a1, b1] = [parseInt(a), parseInt(b)];
+    return (a1-b1).toString();
 }
 
 function multiply(a,b) {
-    return a*b ;
+    [a1, b1] = [parseInt(a), parseInt(b)];
+    return (a1*b1).toString();
 }
 
 function divide(a,b) {
-    return a/b ;
+    [a1, b1] = [parseInt(a), parseInt(b)];
+    return (a1/b1).toString();
+}
+
+function checkOperate() { 
+    operator = calculationBasin.includes("+") || 
+               calculationBasin.includes("–") || 
+               calculationBasin.includes("*") || 
+               calculationBasin.includes("/");
+    let operators = [...document.querySelectorAll(".operator")]
+                    .map(button => button.textContent);
+    return operators.filter(x => calculationBasin.includes(x))[0];
 }
 
 function operate(firstNumber, operator, secondNumber){
     switch(operator) {
         case "+":
-            display = add(firstNumber, secondNumber);
-        case "-":
-            display = subtract(firstNumber, secondNumber);
+            calculationBasin = add(firstNumber, secondNumber);
+            pushBasin();
+            break;
+        case "–":
+            calculationBasin = subtract(firstNumber, secondNumber);
+            pushBasin();
+            break;
         case "*":
-            display = multiply(firstNumber, secondNumber);
+            calculationBasin = multiply(firstNumber, secondNumber);
+            pushBasin();
+            break;
         case "/":
-            display = divide(firstNumber, secondNumber);
+            calculationBasin = divide(firstNumber, secondNumber);
+            pushBasin();
+            break;
         default:
-            display = "";
+            return;
     }
+}
+
+function round(numStr){
+    let newNum = parseFloat(numStr).toFixed(2).toString();
+    if(newNum.endsWith(".00")){
+        newNum = parseInt(newNum).toString();
+    }
+    if(newNum.endsWith(".0")){
+        newNum = parseInt(newNum).toString();;
+    }
+    return newNum;
 }
 
 function clearBasin(){
     calculationBasin = "";
+    checkOperate();
 }
 function clearDisplay(){
-    display = "";
+    display.textContent = "";
+    checkOperate();
 }
 function pushBasin(){
-    display = calculationBasin;
-    clearBasin();
+    if(calculationBasin == ""){
+        display.textContent = "";
+        return;
+    }
+    display.textContent = calculationBasin;
+    checkOperate();
+    console.log(calculationBasin, display);
 }
-function pushBasin(){
-    calculateBasin = display;
-    clearDisplay();
+function pushDisplay(){
+    calculationBasin = display.textContent;
+    checkOperate();
 }
-function calculateBasin(){
-    calculateBasin = operate(...calculateBasin.split);
+function calculate(){
+    if(calculationBasin == ""){
+        return;
+    }
+    let [first, second] = calculationBasin.split(checkOperate());
+    let sign = checkOperate();
+    if(first && sign && second){
+        operate(first, sign, second);
+        calculationBasin = round(calculationBasin);
+        result = calculationBasin;
+    }
     pushBasin();
+    pushDisplay();
 }
 
 function enterNumber(e) {
+    if(calculationBasin == "Infinity"){
+        clearBasin();
+        pushBasin();
+    }
+    if(result == calculationBasin){
+        return;
+    }
     calculationBasin += e.target.textContent;
+    pushBasin();
 }
 function enterOperator(e){
+    checkOperate();
     if(!operator){
-        if(display == ""){
+        if(!display == ""){
             calculationBasin += e.target.textContent;
+            console.log(e.target.textContent);
+            pushBasin();
+            checkOperate();
         }
     }
+    pushBasin();
+}
+function remove1(){
+    if(calculationBasin == result) {
+        clearDisplay();
+        clearBasin();
+        pushBasin();
+    } else{
+        if(calculationBasin) {
+        calculationBasin = calculationBasin
+                           .substring(0, calculationBasin.length-1);
+    }
+    }
+    pushBasin();
+}
+window.onload = () => {
+
+document.querySelectorAll(".number").forEach(num => 
+    num.addEventListener("click", enterNumber)
+);
+document.querySelectorAll(".operator").forEach(op => 
+    op.addEventListener("click", enterOperator)
+);
+document.querySelector(".delete").addEventListener("click", remove1);
+document.querySelector(".equal").addEventListener("click", calculate);
+display = document.getElementById("screen");
 }

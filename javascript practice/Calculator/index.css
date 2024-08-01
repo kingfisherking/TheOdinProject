@@ -1,4 +1,43 @@
-#screen {
-    color: gray;
-    background-color: gray;
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+li {
+    display: flex;
+}
+
+button{
+    height: 50px;
+    width: 50px;
+    align-self: center;
+    font-size: large;
+    font-weight: bold;
+}
+#screen{
+    height: 50px;
+    width: 200px;
+    font-size: large;
+    font-weight: bold;
+    align-self: flex-end;
+    text-align: right;
+    flex: 1 1 1;
+    background-color:azure;
+}
+.number {
+    background-color: dodgerblue;
+}
+.operator {
+    background-color: darkseagreen;
+}
+.delete {
+    background-color: orangered;
 }
