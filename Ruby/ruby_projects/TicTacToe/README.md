@@ -1,6 +1,10 @@
 # Tic-Tac-Toe Project
 ## -- TheOdinProject --
 
+CLI TicTacToe in Ruby
+I'm using the rest of the ReadMe as a notebook
+
+
 Here's where I'm essentially going to map out what I'm thinking for the design
 I just went over a class/module/object review and it seems like that's what is prompted
 
