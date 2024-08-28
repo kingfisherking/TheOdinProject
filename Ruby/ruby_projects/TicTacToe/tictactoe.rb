@@ -1,6 +1,11 @@
 class Board
   def initialize
     @slots = Array.new(9)
+    @guide = {
+      "topleft": 0, "top": 1,
+      "topright": 2, "left" 3,
+      "center": 4, "right": 5,
+      "botleft": 6, "bottom" 7, "botright": 8}
     @combos = [
       [0, 1, 2], [3, 4, 5],
       [6, 7, 8], [0, 3, 6],
@@ -25,9 +30,19 @@ class Board
     self.display_bound
     self.display_row(2)
   end
+  def guide
+    @guide
+  end
+  def guide(choice) #return the number that corresponds to the player choice
+    @guide[choice]
+  end
 
+  def get_mark(place)
+    @slots[place]
+  end
   def make_mark(XorO, place) #a method to put a mark down on the board
-    @slots[place] = XorO
+    @slots[place] = XorO if !@slots[place]
+    self.display
   end
 end
 
@@ -43,8 +58,20 @@ class Game
   def change_turn
     @turn = !@turn
   end
-  
-  def take_turn
+  #prompt play, convert choice, check if mark is there, add mark or reject
+  def take_turn(board)
+    puts "choose where you want to put your mark"
+    choice = gets.chomp
+    if board.guide.keys.include?(choice)
+      location = board.guide(choice)
+      if board.get_mark(location) #if the location isn't nil, reject
+        puts "Already a mark there"
+      else
+        board.make_mark(self.get_turn, location)
+      end
+    else
+      puts "not recognize location"
+    end
   end
 
   #I want a method to take a turn
