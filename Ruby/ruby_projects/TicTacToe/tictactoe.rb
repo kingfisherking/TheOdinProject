@@ -65,6 +65,11 @@ class Board
     @slots[place] = XorO if !@slots[place]
     self.display
   end
+  def tie? #checks if moves left
+    check = @slots.all? {|slot| !slot.nil?}
+    check
+  end
+
 end
 
 class Game
@@ -103,6 +108,10 @@ class Game
       self.take_turn(board)
       board.check_winner
       self.change_turn
+      if board.tie?
+        puts "tie game, nobody wins"
+        break
+      end
   end
 
 end
