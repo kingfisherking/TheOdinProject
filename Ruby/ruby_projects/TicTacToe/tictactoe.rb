@@ -1,6 +1,7 @@
 class Board
   def initialize
     @slots = Array.new(9)
+    @winner? = false
     @guide = {
       "topleft": 0, "top": 1,
       "topright": 2, "left" 3,
@@ -12,6 +13,26 @@ class Board
       [1, 4, 7], [2, 5, 8],
       [2, 4, 6], [0, 4, 8]
     ]
+  end
+  def get_winner
+    @winner?
+  end
+  def change_winner(bool)
+    @winner? = bool
+  end
+  def check_winner #go through 
+    @combos.each do |check|
+      if @slots[check[0]] == @slots[check[1]] && @slots[check[0]] == @slots[check[2]]
+        if @slots[check[0]].nil?
+          return
+        else
+          winner = @slots[check[0]] ? "P1 is the winner" : "P2 is the winner"
+          puts winner
+          self.change_winner(true)
+          return
+        end
+      end
+    
   end
   def display_row(row)
     num = row*3 #row 0: 0 1 and 2, row 1: 3 4 and 5, etc
@@ -78,6 +99,10 @@ class Game
   
   def start
     board = Board.new
+    while !board.get_winner
+      self.take_turn(board)
+      board.check_winner
+      self.change_turn
   end
 
 end
