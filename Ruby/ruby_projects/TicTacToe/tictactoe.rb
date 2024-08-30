@@ -1,7 +1,7 @@
 class Board
   def initialize
     @slots = Array.new(9)
-    @winner? = false
+    @winner = false
     @guide = {
       "topleft": 0, "top": 1,
       "topright": 2, "left" 3,
@@ -15,10 +15,10 @@ class Board
     ]
   end
   def get_winner
-    @winner?
+    @winner
   end
   def change_winner(bool)
-    @winner? = bool
+    @winner = bool
   end
   def check_winner #go through 
     @combos.each do |check|
@@ -115,3 +115,5 @@ class Game
   end
 
 end
+
+Game.new.start end
