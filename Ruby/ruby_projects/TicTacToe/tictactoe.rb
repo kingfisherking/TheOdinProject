@@ -34,12 +34,27 @@
 
 
 
-# Game object
+# Game object, keeps track of game logic
 # turn var to keep track
+# input list to keep track of acceptable inputs
 
 # get the current turn
+# # return turn
 # change turn
+# #turn = !turn
 # get player input
+# #gets.chomp "choose from list" var inputlist
 # check player input
+# #if input is in inputlist, continue/true/ok, if not then output error
+# take turn method
+# #prompt player based on turn, false is p2 p1 is true
+# #get player input 
+# #board method make mark
+# #check winner
+# #change turn if no winner, if yes winner end game
 # start a new game
+# #create new board object
+# #take turn until winner announced
+#announce winner
+# #if true, p1 wins, if flase p2 wins, if nil tie game
 # haven't thought everything out
