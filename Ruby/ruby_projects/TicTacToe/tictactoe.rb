@@ -57,4 +57,10 @@
 # #take turn until winner announced
 #announce winner
 # #if true, p1 wins, if flase p2 wins, if nil tie game
+
+
 # haven't thought everything out
+#maybe check winner for board obj is a bool to keep track of if winner exists
+#maybe it changes the bool but returns the winner, so it can return nil
+#and a separate game logic, like announce winner, converts it to tie/win
+#check winner also checks if there's a tie I guess?
