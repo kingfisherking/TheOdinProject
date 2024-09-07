@@ -1,8 +1,9 @@
-
+class Board
+end
 
 
 # ## Board object
-# slots for each mark
+# slots for each mark, 9 slots prefilled with nil
 # winner variable (should I make this nil instead of false?)
 # hash that converts position to slot number
 # combinations for checking winner
