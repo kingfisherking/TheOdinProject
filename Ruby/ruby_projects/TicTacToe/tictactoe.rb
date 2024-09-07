@@ -1,4 +1,10 @@
 class Board
+  def initialize
+    @slots = Array.new(9)
+    @winner = nil
+    @position = {"temp":true}
+    @combos = []
+  end
 end
 
 
