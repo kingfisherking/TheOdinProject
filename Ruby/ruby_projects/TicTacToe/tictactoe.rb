@@ -14,6 +14,16 @@ class Board
       [2, 4, 6], [0, 4, 8]
     ]
   end
+
+  def get_winner
+    @winner
+  end
+
+  def change_winner(bool)
+    @winner = bool
+  end
+
+  
 end
 
 
