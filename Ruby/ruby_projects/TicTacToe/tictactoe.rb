@@ -23,6 +23,18 @@ class Board
     @winner = bool
   end
 
+  def get_mark(number)
+    @slots[number]
+  end
+
+  def make_mark(turn, place)
+    if @slots[place] 
+      puts "already mark there"
+    else
+      @slots[place] = turn
+    end
+  end
+
   def check_winner() #thinking about making a method to get a place
     @combos.each do |combo| #thinking about method to check a single trio
     end
