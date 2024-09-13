@@ -23,6 +23,11 @@ class Board
     @winner = bool
   end
 
+  def check_winner() #thinking about making a method to get a place
+    @combos.each do |combo| #thinking about method to check a single trio
+    end
+  end
+
   
 end
 
