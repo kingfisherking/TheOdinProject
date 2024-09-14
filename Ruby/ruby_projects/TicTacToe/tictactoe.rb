@@ -35,6 +35,21 @@ class Board
     end
   end
 
+  def conversion(input)
+    if @position.key?(input)
+      @position[input]
+    else
+      puts "input not found in guide"
+    end
+  end
+
+  def trio(arr)
+    if @slots[arr[0]] ==  @slots[arr[1]] && @slots[arr[1]] ==  @slots[arr[2]]
+      return true
+    end
+    return false
+  end
+
   def check_winner() #thinking about making a method to get a place
     @combos.each do |combo| #thinking about method to check a single trio
     end
