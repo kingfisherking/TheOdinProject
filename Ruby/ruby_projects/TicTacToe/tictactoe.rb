@@ -89,6 +89,10 @@ end
 # #return the slot at the specific index
 # #maybe I'll need the conversion method
 # I have a tie method, but maybe I wont need it.
+# display current board
+# #slot0 | slot1 | slot2
+# #if slot [number] isn't nil, display the slot contents 
+# #or convert nil to " "
 
 
 
