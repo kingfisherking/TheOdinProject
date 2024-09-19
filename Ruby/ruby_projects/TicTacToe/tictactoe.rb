@@ -48,7 +48,9 @@ class Board
 
   def trio(arr)
     if @slots[arr[0]] ==  @slots[arr[1]] && @slots[arr[1]] ==  @slots[arr[2]]
-      return @slots[arr[0]]
+      unless @slots[arr[0]] == nil
+        return @slots[arr[0]]
+      end
     end
     return nil
   end
