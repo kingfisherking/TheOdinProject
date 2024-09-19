@@ -14,6 +14,9 @@ class Board
       [2, 4, 6], [0, 4, 8]
     ]
   end
+  def empty?
+    @slots.any? {|slot| !slot.nil?}
+  end
 
   def get_winner
     @winner
@@ -45,13 +48,23 @@ class Board
 
   def trio(arr)
     if @slots[arr[0]] ==  @slots[arr[1]] && @slots[arr[1]] ==  @slots[arr[2]]
-      return true
+      return @slots[arr[0]]
     end
-    return false
+    return nil
   end
 
   def check_winner() #thinking about making a method to get a place
     @combos.each do |combo| #thinking about method to check a single trio
+      unless trio(combo).nil?
+        win_message = trio(combo) ? "P1 Wins!" : "P2 Wins"
+        self.change_winner(true)
+        puts win_message
+      else
+        if self.is_full?
+          self.change_winner(false)
+          puts "nobody wins, tie game!"
+        end
+      end
     end
   end
 
@@ -93,6 +106,8 @@ end
 # #slot0 | slot1 | slot2
 # #if slot [number] isn't nil, display the slot contents 
 # #or convert nil to " "
+#method to check if board game is full
+#I can add this to mark and check winner
 
 
 
