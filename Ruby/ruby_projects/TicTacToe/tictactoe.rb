@@ -112,6 +112,10 @@ end
 #I can add this to mark and check winner
 
 class Game
+  def initialize
+    @turn = true  #this can swap every round, p1 = true, p2 = false
+    @inputs = Board.new.keys() #if its not in this list, its not fair game
+  end
 end
 
 # Game object, keeps track of game logic
