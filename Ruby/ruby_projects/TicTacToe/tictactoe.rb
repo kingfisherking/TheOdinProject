@@ -111,7 +111,8 @@ end
 #method to check if board game is full
 #I can add this to mark and check winner
 
-
+class Game
+end
 
 # Game object, keeps track of game logic
 # turn var to keep track
@@ -143,3 +144,5 @@ end
 #maybe it changes the bool but returns the winner, so it can return nil
 #and a separate game logic, like announce winner, converts it to tie/win
 #check winner also checks if there's a tie I guess?
+
+#test = Board.new
