@@ -168,4 +168,5 @@ end
 #test = Board.new
 
 #no clue where I left off, please try again
-#where I left off: weird git messages, please fix
+#where I left off: weird git messages
+#weird git messages fixed
