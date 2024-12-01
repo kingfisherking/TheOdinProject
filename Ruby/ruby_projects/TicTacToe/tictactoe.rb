@@ -116,6 +116,22 @@ class Game
     @turn = true  #this can swap every round, p1 = true, p2 = false
     @inputs = Board.new.keys() #if its not in this list, its not fair game
   end
+
+  def turn
+    @turn
+  end
+
+  def change_turn
+    @turn = !@turn
+  end
+  def player_input
+    puts "Enter where you want to mark"
+    input = gets.chomp
+    if @inputs.include?(input)
+      return input
+    end
+    return nil
+  end
 end
 
 # Game object, keeps track of game logic
@@ -150,3 +166,6 @@ end
 #check winner also checks if there's a tie I guess?
 
 #test = Board.new
+
+#no clue where I left off, please try again
+#where I left off: weird git messages, please fix

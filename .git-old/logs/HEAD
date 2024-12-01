@@ -1,0 +1,69 @@
+0000000000000000000000000000000000000000 f8c418f8713e78b02273d382a7e6c5e83d223e03 Akili Hall <quaaysan@gmail.com> 1721930411 -0500	clone: from github.com:kingfisherking/TheOdinProject.git
+f8c418f8713e78b02273d382a7e6c5e83d223e03 98e28d14d40aea74a86e77923f79dabf20b4312d Akili Hall <quaaysan@gmail.com> 1721930575 -0500	commit: Add hello, remove delete
+98e28d14d40aea74a86e77923f79dabf20b4312d f3ce0b63757ced97b22053a25b48e20b114ad6f8 Akili Hall <quaaysan@gmail.com> 1721930801 -0500	commit: Edit readme and helloworld
+f3ce0b63757ced97b22053a25b48e20b114ad6f8 c7e38a2c08445dfadf40b6ee5d650665037f5c26 Akili Hall <quaaysan@gmail.com> 1721949961 -0500	commit: Here's some boilerplate html to get started
+c7e38a2c08445dfadf40b6ee5d650665037f5c26 4bbf57195dbc970c6cc4b9ca2ea8f7696d1ccf3f Akili Hall <quaaysan@gmail.com> 1721972345 -0500	pull: Fast-forward
+4bbf57195dbc970c6cc4b9ca2ea8f7696d1ccf3f cf7d9cdd2e16901911551a16e7682aa626ff2592 Akili Hall <quaaysan@gmail.com> 1721972471 -0500	commit: Establish Foundations Project / Lessons
+cf7d9cdd2e16901911551a16e7682aa626ff2592 07d1c54d5b45145ed3449bdd3654ee8b6354f168 Akili Hall <quaaysan@gmail.com> 1721972631 -0500	commit: Add Recipe and Link To Homepage
+07d1c54d5b45145ed3449bdd3654ee8b6354f168 8c4837660fb22007822053518ef5f20419c547e6 Akili Hall <quaaysan@gmail.com> 1721972987 -0500	commit: Add Description, Ingredients, Steps to page
+8c4837660fb22007822053518ef5f20419c547e6 5c4fcdd21391109eb7b7701722e8ed39904a8936 Akili Hall <quaaysan@gmail.com> 1721973251 -0500	commit: Add Recipes Meatloaf and Lasagna
+5c4fcdd21391109eb7b7701722e8ed39904a8936 090cf09a27d445f21416d7468ab08bf73614f459 Akili Hall <quaaysan@gmail.com> 1722012665 -0500	commit: Add CSS Exercises detach submodule
+090cf09a27d445f21416d7468ab08bf73614f459 ae77e2043b095cb75301428c36746d0da12c1ed3 Akili Hall <quaaysan@gmail.com> 1722030662 -0500	commit: Solve foundations css and margin-padding exercises
+ae77e2043b095cb75301428c36746d0da12c1ed3 f4c553bd183bd902b54706d027ddc63d5803761e Akili Hall <quaaysan@gmail.com> 1722134382 -0500	commit: Complete CSS Flex Exercises
+f4c553bd183bd902b54706d027ddc63d5803761e 37a99782f925d13a371abad953663586c9a4acad Akili Hall <quaaysan@gmail.com> 1722136917 -0500	commit: Create landing page and build structure/content
+37a99782f925d13a371abad953663586c9a4acad b95007bea3ca4278f80df90d64a85c53b095fd0a Akili Hall <quaaysan@gmail.com> 1722138784 -0500	commit: Style page and add footer
+b95007bea3ca4278f80df90d64a85c53b095fd0a 218f31bc4eda3b5f7775ecdacfc27d10abc900a6 Akili Hall <quaaysan@gmail.com> 1722139920 -0500	commit: Finalize style for button, placeholder, signup
+218f31bc4eda3b5f7775ecdacfc27d10abc900a6 7bf948d9e53a178a7cf38087bcff7f1c4bac4eb5 Akili Hall <quaaysan@gmail.com> 1722211992 -0500	commit: Initialize JS project rock paper scissors
+7bf948d9e53a178a7cf38087bcff7f1c4bac4eb5 3584586072fa1e6772e66cb15bc8fb0ca86723ac Akili Hall <quaaysan@gmail.com> 1722218005 -0500	commit: Add computer, player input Add round and game logic
+3584586072fa1e6772e66cb15bc8fb0ca86723ac 4edaff9d02eae52ef329beb7a8a3970a93ec01b6 Akili Hall <quaaysan@gmail.com> 1722300431 -0500	commit: Add javascript exercises without clone/fork
+4edaff9d02eae52ef329beb7a8a3970a93ec01b6 08a8c89e593310fde483adc5c1adfa67280dc2b6 Akili Hall <quaaysan@gmail.com> 1722313035 -0500	commit: Complete 7 exercises
+08a8c89e593310fde483adc5c1adfa67280dc2b6 08a8c89e593310fde483adc5c1adfa67280dc2b6 Akili Hall <quaaysan@gmail.com> 1722444014 -0500	checkout: moving from main to rps-ui
+08a8c89e593310fde483adc5c1adfa67280dc2b6 0c6c0a5a9788ce9780dcb6c7f51b612e7981747a Akili Hall <quaaysan@gmail.com> 1722445201 -0500	commit: Create UI, Change game functionality to support UI
+0c6c0a5a9788ce9780dcb6c7f51b612e7981747a 08a8c89e593310fde483adc5c1adfa67280dc2b6 Akili Hall <quaaysan@gmail.com> 1722445248 -0500	checkout: moving from rps-ui to main
+08a8c89e593310fde483adc5c1adfa67280dc2b6 0c6c0a5a9788ce9780dcb6c7f51b612e7981747a Akili Hall <quaaysan@gmail.com> 1722445262 -0500	merge rps-ui: Fast-forward
+0c6c0a5a9788ce9780dcb6c7f51b612e7981747a 16fecd31698c8061929471572f728b1be9603941 Akili Hall <quaaysan@gmail.com> 1722446923 -0500	commit: Change directory structure, add EAS project
+16fecd31698c8061929471572f728b1be9603941 682c9782e9c8ee1945743f1e12fc75d0a532e77b Akili Hall <quaaysan@gmail.com> 1722463507 -0500	commit: Create webpage, script, stylesheet ; add functionality for grid
+682c9782e9c8ee1945743f1e12fc75d0a532e77b a39bd21d0f02e42ee99453899a0e967591af7f34 Akili Hall <quaaysan@gmail.com> 1722464334 -0500	commit: Ensure reset is static, Apply grid shape
+a39bd21d0f02e42ee99453899a0e967591af7f34 fb9417a238a26db29c25df3dda9c5c10a9766e9a Akili Hall <quaaysan@gmail.com> 1722465691 -0500	commit: Remove grid-resizing, add div resizing functionality
+fb9417a238a26db29c25df3dda9c5c10a9766e9a a2ab56a493d2d286c2b34eee6faab613bd350dd3 Akili Hall <quaaysan@gmail.com> 1722487444 -0500	commit: Complete exercises 8 - 12
+a2ab56a493d2d286c2b34eee6faab613bd350dd3 2dd5a8bfb2bebff54f70372fdec584029e696568 Akili Hall <quaaysan@gmail.com> 1722529175 -0500	commit: Create html/css/js files
+2dd5a8bfb2bebff54f70372fdec584029e696568 6a1a5ae55cbda0519e6413942d33cf8a9409a1fd Akili Hall <quaaysan@gmail.com> 1722531546 -0500	commit: Add operator functions: add, subtract, multiple, divide
+6a1a5ae55cbda0519e6413942d33cf8a9409a1fd 50f4c52b272758b8d59c94f169633137e0c1a810 Akili Hall <quaaysan@gmail.com> 1722538502 -0500	commit: Honestly I'm making a bunch of functions, its messy
+50f4c52b272758b8d59c94f169633137e0c1a810 22faa4e35e28e69dbcf2d6b632cc7151aaf43891 Akili Hall <quaaysan@gmail.com> 1722550366 -0500	commit: build functionality for calculator, design ui
+22faa4e35e28e69dbcf2d6b632cc7151aaf43891 e687a371fc3c110d4f062931e7611e212683f3a5 Akili Hall <quaaysan@gmail.com> 1722627725 -0500	commit: copy ruby exercises without clone/fork to prevent pull issues
+e687a371fc3c110d4f062931e7611e212683f3a5 3e5b86c16cb3d4789bc628ec927844cd0a306bca Akili Hall <quaaysan@gmail.com> 1722713668 -0500	commit: Update exercises, unskip extra tests
+3e5b86c16cb3d4789bc628ec927844cd0a306bca ace1f0c0c4c2aad8b761a9888dd81e719c45dc37 Akili Hall <quaaysan@gmail.com> 1722811337 -0500	commit: complete exercises 6 and 7, increase testing cases
+ace1f0c0c4c2aad8b761a9888dd81e719c45dc37 4dc207d389905de60ed5ef5b47cd9c5521f7467b Akili Hall <quaaysan@gmail.com> 1722821881 -0500	commit: complete method exercises
+4dc207d389905de60ed5ef5b47cd9c5521f7467b 44a478becd2ed20722bcdd7d1de07865e7309811 Akili Hall <quaaysan@gmail.com> 1723326147 -0500	commit: Finish exercises 9 and 10
+44a478becd2ed20722bcdd7d1de07865e7309811 ba2d885cb59878bbafc1e81839b9c89cfda7fd5f Akili Hall <quaaysan@gmail.com> 1723514021 -0500	commit: complete exercises 11 and 12
+ba2d885cb59878bbafc1e81839b9c89cfda7fd5f 0d43b8873762074ac9e14ed75867df287458c37c Akili Hall <quaaysan@gmail.com> 1723520112 -0500	commit: Complete cipher project
+0d43b8873762074ac9e14ed75867df287458c37c 662b9d9819cdd793a7f5524f9913b34d79691cd8 Akili Hall <quaaysan@gmail.com> 1723916126 -0500	commit: complete substrings
+662b9d9819cdd793a7f5524f9913b34d79691cd8 c36eb6d56b0b7cf474c6e3cd6d0485fbf4a089c4 Akili Hall <quaaysan@gmail.com> 1723916537 -0500	commit: create stockpicker
+c36eb6d56b0b7cf474c6e3cd6d0485fbf4a089c4 aca27b147ff198ba4f16c4875a61d6e963ccd43d Akili Hall <quaaysan@gmail.com> 1723921734 -0500	commit: complete stockpicker
+aca27b147ff198ba4f16c4875a61d6e963ccd43d 3a1d158d1116d942be97ad4e6503b4f13e93a4a8 Akili Hall <quaaysan@gmail.com> 1723921836 -0500	commit: create bubblesort project
+3a1d158d1116d942be97ad4e6503b4f13e93a4a8 d1bfa64ce9f1b501771e382e3292b0f2933d0fc3 Akili Hall <quaaysan@gmail.com> 1723944898 -0500	commit: Complete bubblesort
+d1bfa64ce9f1b501771e382e3292b0f2933d0fc3 79ff4e86974cebac8c810131aa353fc8be38ded9 Akili Hall <quaaysan@gmail.com> 1724553464 -0500	commit: Create tictactoe dir
+79ff4e86974cebac8c810131aa353fc8be38ded9 f93065586a73a73f3544cf4f0643f44fa9ca38ae Akili Hall <quaaysan@gmail.com> 1724700048 -0500	commit: thinking about logic/structure
+f93065586a73a73f3544cf4f0643f44fa9ca38ae 36175e0b521186132717a261b387faa3a510f5aa Akili Hall <quaaysan@gmail.com> 1724790906 -0500	commit: create board and game objects, abstract play into methods
+36175e0b521186132717a261b387faa3a510f5aa 209ad611fdfbfccc68d77d02b0c39517f1094a52 Akili Hall <quaaysan@gmail.com> 1724791961 -0500	commit: update display method for board
+209ad611fdfbfccc68d77d02b0c39517f1094a52 0ba59a18c12b5766d013f59bcef231b6f825c736 Akili Hall <quaaysan@gmail.com> 1724792035 -0500	commit: clarify readme
+0ba59a18c12b5766d013f59bcef231b6f825c736 760fd9165999a5d0c20a112307f1141346f63c07 Akili Hall <quaaysan@gmail.com> 1724881214 -0500	commit: add guide to board and update turn for game
+760fd9165999a5d0c20a112307f1141346f63c07 a7f4d69667e6669aeeec4dbd2b4750dd45f39b88 Akili Hall <quaaysan@gmail.com> 1725031818 -0500	commit: complete board win check and game logic
+a7f4d69667e6669aeeec4dbd2b4750dd45f39b88 8334f393dc9e27e4df8223ddc67db6c43fab9838 Akili Hall <quaaysan@gmail.com> 1725032223 -0500	commit: update game logic with tie games
+8334f393dc9e27e4df8223ddc67db6c43fab9838 96e53544e200a07de2a6c699ff9a3114cacf14bb Akili Hall <quaaysan@gmail.com> 1725033702 -0500	commit: update winner
+96e53544e200a07de2a6c699ff9a3114cacf14bb 9ad7cb78410f8426f5988d542d59569509ee30fc Akili Hall <quaaysan@gmail.com> 1725241906 -0500	commit: starting over
+9ad7cb78410f8426f5988d542d59569509ee30fc 6efd9c477b5a450030d521906b9ebd6dd6932456 Akili Hall <quaaysan@gmail.com> 1725330003 -0500	commit: pseudocode for board object
+6efd9c477b5a450030d521906b9ebd6dd6932456 f07c0bd99c46541def402689ab1d165103263a17 Akili Hall <quaaysan@gmail.com> 1725383934 -0500	commit: game logic pseudocode
+f07c0bd99c46541def402689ab1d165103263a17 dcb120c8610145b78f6f59177a740a97c8e7854d Akili Hall <quaaysan@gmail.com> 1725384323 -0500	commit: more pseudocode
+dcb120c8610145b78f6f59177a740a97c8e7854d 8394fa19d2231e2683d66973bc7740ddbd6f1252 Akili Hall <quaaysan@gmail.com> 1725751348 -0500	commit: update methodolgy and create class Board
+8394fa19d2231e2683d66973bc7740ddbd6f1252 2ea29b01e33a6b559910be57ac7dcf820adee280 Akili Hall <quaaysan@gmail.com> 1725752233 -0500	commit: create initialized vars for Board
+2ea29b01e33a6b559910be57ac7dcf820adee280 1d1ed99df9868e54fa8051be459c0c08a5e3e764 Akili Hall <quaaysan@gmail.com> 1725753721 -0500	commit: update position and combo for Board
+1d1ed99df9868e54fa8051be459c0c08a5e3e764 77cb3c252f99df378ae5dc595bac77aec3325092 Akili Hall <quaaysan@gmail.com> 1725830243 -0500	commit: add get/change winners
+77cb3c252f99df378ae5dc595bac77aec3325092 45eae58b31d52a7b71ef474fab23f51df3e27bbf Akili Hall <quaaysan@gmail.com> 1726194827 -0500	commit: add notes on making new methods to facilitate checking winner
+45eae58b31d52a7b71ef474fab23f51df3e27bbf 8dee4f52c00140d77c8f45bea462ac8cc8381265 Akili Hall <quaaysan@gmail.com> 1726195040 -0500	commit: adding method to get and make marks, start building check winner
+8dee4f52c00140d77c8f45bea462ac8cc8381265 2d34f2b8d82670d6f613bec51c4db371fbdd8bb3 Akili Hall <quaaysan@gmail.com> 1726337171 -0500	commit: create conversion and trio methods
+2d34f2b8d82670d6f613bec51c4db371fbdd8bb3 7a63b644bed7c9976700782eee0da4f794cedf1b Akili Hall <quaaysan@gmail.com> 1726458362 -0500	commit: add pseudocode for display board
+7a63b644bed7c9976700782eee0da4f794cedf1b 73030316ca29fd9b8bd2696bd652db5a8cf0c80f Akili Hall <quaaysan@gmail.com> 1726710643 -0500	commit: I hope I added the empty? method correctly, I should test more
+73030316ca29fd9b8bd2696bd652db5a8cf0c80f 94eb97e1ca8ecc9509fe3b4f9e5cc320a4de8190 Akili Hall <quaaysan@gmail.com> 1726710747 -0500	commit: adding nil check to trio
+94eb97e1ca8ecc9509fe3b4f9e5cc320a4de8190 a43dcbe0e7bf69072306a2a3d99297b1929a8689 Akili Hall <quaaysan@gmail.com> 1726963851 -0500	commit: create Game class
+                                                                                                                                                                                             
